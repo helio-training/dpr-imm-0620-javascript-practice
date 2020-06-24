@@ -40,3 +40,8 @@ const teacher = {
 }
 teacher.greetArrow();
 teacher.greetFunction();
+
+// Module is the JS File, Exports are the exposed resources
+module.exports = {
+    person : teacher
+}
