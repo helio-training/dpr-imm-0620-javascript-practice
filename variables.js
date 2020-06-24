@@ -22,8 +22,7 @@ const pi = 3.1415927; // Declaration and Assignment
 // pi = 4; // Breaks the process, cannot reassign
 console.log('pi', pi);
 
-
-// Block Scope
+// Using Block Scope
 {
     let hidden = 'Only seen in Scope';
     var exposed = 'Can be seen everywhere';
@@ -31,3 +30,13 @@ console.log('pi', pi);
 }
 console.log(exposed);
 console.log(typeof hidden);
+
+// Using Variables as Containers
+const teacher = {
+    name : "Wes",
+    title : "Instructor",
+    greetArrow : () => console.log(`Hello, Class! My name is ${this.name}`), 
+    greetFunction : function () { console.log(`Hello, Class! My name is ${this.name}`) }
+}
+teacher.greetArrow();
+teacher.greetFunction();
